@@ -10,7 +10,10 @@
 class CreateCostumes
   def change
     create_table :costumes do |t|
-      t.string :names
-      t.integer
+      t.string  :names
+      t.integer :price
+      t.string  :size 
+      t.string  :image_url
+    end
   end
 end
